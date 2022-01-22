@@ -502,8 +502,7 @@ address {
     margin-bottom: 10px;
     padding: 5px 20px;
     border-radius: 20px;
-    background: #53595a;
-    color: #f08f18;
+    color: #000;
     font-size: 1.1rem;
     line-height: 1.1;
     transition: all 0.5s ease;
@@ -515,12 +514,13 @@ address {
 
 .about-us li a:hover {
     background-color: #f08f18;
-    color: #53595a;
+    color: #000;
 }
 
 
 .contact {
     padding: 20px;
+    transform: translateX(50px);
     width: 33%;
 }
 
@@ -529,11 +529,12 @@ address {
     color: #000;
     font-family: 'Dongle', sans-serif;
     line-height: 1.2;
+    text-align: justify;
 }
 
 .contact ul li {
     list-style: none;
-    text-align: center;
+    text-align: justify;
     margin-bottom: 10px;
     display: block;
 }
