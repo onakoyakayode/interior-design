@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 5px 50px;
+}
+
+header {
+    background-color: #89959c;
+    height: 100vh;
+    width: 100%;
+}
+
+.navlist {
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(145deg,transparent 50%, #3a474e 50%);
+}
+
+.logo {
+    color: #fff;
+    font-size: 3.4rem;
+    font-family: 'Dongle', sans-serif;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #3a474e;
+}
+
+.navlist ul {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.navlist li {
+    list-style: none;
+    font-size: 2.2rem;
+    font-family: 'Dongle', sans-serif;
+    font-weight: 400;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.navlist a::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3px;
+    bottom: 10px;
+    left: 0;
+    background: #f08f18;
+    transition: all 0.3s ease;
+}
+
+.navlist a:hover::after {
+    width: 100%;
+}
+
+.section1 {
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    background: #3a474e;
+    border-radius: 0px 80px 0px 0px;
+    padding: 30px 60px 30px 40px;
+    width: 40%;
+    position: absolute;
+    z-index: 9999;
+    top: 200px;
+}
+
+.content .spice {
+    color: #FFF;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    position: relative;
+    letter-spacing: 5px;
+    margin-top: 25px;
+}
+
+.content .spice::after {
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 15px;
+    bottom: 5px;
+    left: 0;
+    background-color: #f08f18;
+    z-index: -1;
+}
+
+.content .home {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.5;
+    letter-spacing: 12px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.content p {
+    color: #fff;
+    font-size: 1.7rem;
+    font-family: 'Dongle', sans-serif;
+    line-height: .9;
+    margin-bottom: 20px;
+}
+
+.content a button {
+    background-color: #f08f18;
+    color: #FFF;
+    border-radius: 20px;
+    padding: 2px 35px;
+    font-size: 1.5em;
+    font-family: 'Dongle', sans-serif;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transition: all 0.5s ease-in;
+}
+
+.content a button:hover {
+    background-color: #Fff;
+    color: #EF972C;
+}
+
+.image {
+    margin-left: 12%;
+    width: 100%;
+    height: 86.5vh;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section2 {
+    background: #FFF;
+    padding-top: 50px;
+}
+
+.section2 h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #f08f18;
+    font-size: 3rem;
+    font-family: 'Dongle', sans-serif;
+}
+
+.section2 p {
+    padding: 5px 150px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+.section2 p span {
+    color: #f08f18;
+    font-size: 1.3rem;
+}
+
+.section2 p span strong {
+    color: #3a474e;
+    font-size: 1.5rem;
+}
+
+.section21 {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 60px 0px;
+}
+
+.image-set {
+    display: flex;
+    align-items: center;
+}
+
+.image-set .img1 {
+    width: 250px;
+    height: 400px;
+}
+
+.img1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px 75px 0px 75px;
+}
+
+.image-set .img2 {
+    width: 250px;
+    height: 330px;
+    transform: translateX(-40px);
+}
+.img2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px 75px 0px 75px;
+}
+
+.image-set .img3 {
+    width: 220px;
+    height: 270px;
+    transform: translateX(-80px);
+}
+
+.img3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px 75px 0px 75px;
+}
+
+.set {
+    padding-right: 50px;
+}
+
+.set h2 {
+    padding: 0 250px 0 0;
+    text-align: left;
+    line-height: 0.8;
+}
+
+.set p {
+    padding: 0;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+.set a button {
+    padding: 2px 30px;
+    background-color: transparent;
+    border: 1px solid #f08f18;
+    border-radius: 20px;
+    color: #f08f18;
+    font-family: 'Dongle', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.set a button:hover {
+    background-color: #f08f18;
+    color: #FFF;
+}
