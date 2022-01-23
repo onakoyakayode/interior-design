@@ -13,13 +13,17 @@
         <div class="head">
             <nav class="navlist container">
                 <div class="logo">April<span>26</span></div>
-                <ul>
-                    <li><a href="home">Home</a></li>
+                <ul id="nav-items">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <li><a class="active" href="home">Home</a></li>
                     <li><a href="design">Design</a></li>
                     <li><a href="about-us">About Us</a></li>
                     <li><a href="contact">contact</a></li>
                     <li><a href="faq">Faq</a></li>
                 </ul>
+                <div onclick="menuButton()" id="toggle-button" class="toggle">
+                    <img src="/menu.svg" alt="menu">
+                </div>
             </nav>
 
             <div class="section1">
@@ -124,7 +128,7 @@
         </div>
     </div>
 
-    <footer class="foot container">
+    <footer class="foot">
         <h2 class="get-started">Would you like to get Started?</h2>
         <a href="#">
             <button type="button" class="btn-ft">Let's talk!</button>
